@@ -15,7 +15,7 @@ const Experience = () => {
     {
       title: "AI Research & Full-Stack Developer (Academic Project)",
       company: "Vishwakarma Institute of Information Technology, Pune",
-      period: "Sept 2024 – Jan 202",
+      period: "Sept 2024 – Jan 2025",
       description: [
         "Developed an AI-powered classroom platform for plagiarism and AI-text detection with a complete assignment workflow system.",
         "Implemented FAISS semantic search, BM25 retrieval, and AI text classifiers for intelligent plagiarism detection.",
