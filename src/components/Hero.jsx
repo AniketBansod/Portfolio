@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -7,10 +7,23 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-background to-violet-600/10 blur-3xl -z-10 animate-pulse" />
 
       <div className="max-w-6xl mx-auto text-center">
-        {/* Animated initials circle */}
+        {/* Profile photo with gradient ring, glow and subtle hover */}
         <div className="mb-8 inline-flex">
-          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center animate-pulse">
-            <span className="text-4xl font-bold text-white">AB</span>
+          <div className="relative group">
+            {/* soft glow */}
+            <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-blue-500/20 to-violet-600/20 blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
+
+            {/* gradient ring */}
+            <div className="p-[3px] rounded-full bg-gradient-to-br from-blue-500 to-violet-600">
+              <img
+                src="/Ani_Pic.jpg"
+                alt="Aniket Bansod"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover bg-card shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+            </div>
           </div>
         </div>
 
@@ -26,7 +39,8 @@ const Hero = () => {
 
         {/* Description */}
         <p className="text-lg text-foreground/60 mb-10 fade-in max-w-2xl mx-auto leading-relaxed">
-          Designing and developing scalable, intelligent, and cloud-native software systems powered by modern AI and full-stack technologies.
+          Designing and developing scalable, intelligent, and cloud-native
+          software systems powered by modern AI and full-stack technologies.
         </p>
 
         {/* CTA Buttons */}
@@ -73,7 +87,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
