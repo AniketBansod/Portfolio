@@ -4,13 +4,11 @@ Showcasing my frontend engineering work, projects, and experience with a fast, m
 
 ## 🔗 Live Demo
 
-https://your-portfolio-link.com
+https://portfolio-cdpn.vercel.app
 
 ## 📸 Preview
 
-![Portfolio Screenshot](./docs/screenshot.png)
-Place a screenshot named `screenshot.png` inside `./docs/`. If your file name differs (e.g., `./docs/image.png`), update the path above. The preview helps recruiters quickly assess design, layout, and visual polish.
-
+![Portfolio Screenshot](./docs/image.png)
 ## 🚀 Features
 
 - Responsive hero with gradient branding and CTAs
