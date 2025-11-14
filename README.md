@@ -1,165 +1,83 @@
-# Aniket Bansod - Portfolio Website
+# Personal Portfolio – React + TailwindCSS
 
-A world-class, recruiter-friendly portfolio website for a Software Developer built with React and modern web technologies.
+Showcasing my frontend engineering work, projects, and experience with a fast, modern, and responsive portfolio.
 
-## Features
+## 🔗 Live Demo
 
-- **Modern Design**: Dark mode with electric blue and violet gradients
-- **Responsive**: Fully responsive design across all devices
-- **Fast Performance**: Built with Vite for optimal performance
-- **Smooth Animations**: Engaging micro-interactions and transitions
-- **SEO Friendly**: Semantic HTML and meta tags for better search visibility
-- **Easy Deployment**: Ready to deploy to Vercel or any static hosting
+https://your-portfolio-link.com
 
-## Tech Stack
+## 📸 Preview
 
-- **Frontend**: React 19.2.0
-- **Styling**: Tailwind CSS 4.1.9
-- **Build Tool**: Vite 5.0.8
-- **Icons**: Lucide React
-- **Deployment**: Vercel (recommended)
+![Portfolio Screenshot](./docs/screenshot.png)
+Place a screenshot named `screenshot.png` inside `./docs/`. If your file name differs (e.g., `./docs/image.png`), update the path above. The preview helps recruiters quickly assess design, layout, and visual polish.
 
-## Getting Started
+## 🚀 Features
 
-### Prerequisites
+- Responsive hero with gradient branding and CTAs
+- About, Skills, Experience, Projects, Achievements, Education, and Contact sections
+- Smooth, subtle animations (CSS-based) and hover interactions
+- Modern dark UI with system preference + persisted theme
+- Reusable, composable React components
+- Fully responsive layout with TailwindCSS v4 utilities
+- SEO-friendly meta tags and theme-color in `index.html`
+- Vercel-ready build output for fast, global hosting
 
-- Node.js (v16 or higher)
-- npm or yarn
+## 🛠️ Tech Stack
 
-### Installation
+- React.js (Vite + `@vitejs/plugin-react`)
+- Vite (fast dev, optimized build)
+- TailwindCSS v4 (`@tailwindcss/postcss` + design tokens)
+- Lucide Icons (`lucide-react`)
 
-\`\`\`bash
-# Clone the repository
-git clone <repository-url>
+## 📦 Installation
 
-# Navigate to the project directory
-cd aniket-bansod-portfolio
+```bash
+# Clone the repo
+git clone <your-repo-url>
+cd <repo-folder>
 
 # Install dependencies
 npm install
-\`\`\`
 
-### Development
-
-Start the development server:
-
-\`\`\`bash
+# Start development server
 npm run dev
-\`\`\`
 
-The application will open at `http://localhost:3000`
-
-### Build
-
-Create a production build:
-
-\`\`\`bash
+# Build for production
 npm run build
-\`\`\`
+```
 
-### Preview
+## 📂 Folder Structure
 
-Preview the production build locally:
+- `/src/components` – UI building blocks (Navigation, Hero, About, Skills, Experience, Projects, Achievements, Education, Contact, Footer)
+- `/src/App.jsx` – Section composition and page layout
+- `/src/main.jsx` – App entry + React mount
+- `/src/index.css` – Tailwind import + color tokens (light/dark)
+- `/public` – Static assets used at runtime
+- `/docs` – Project docs and preview image(s)
+- `/vite.config.js` – Vite + React plugin, alias `@ -> /src`
+- `/postcss.config.js` – Tailwind v4 PostCSS setup
+- `/index.html` – HTML shell, meta tags, theme bootstrap
 
-\`\`\`bash
-npm run preview
-\`\`\`
+## ⚙️ Customization
 
-## Project Structure
+- Colors: Edit design tokens in `src/index.css` (`:root` and `.dark`). Tailwind maps these via the `@theme inline` block.
+- Branding: Update titles/meta in `index.html`, favicon, gradients, and copy in `Hero.jsx` and `Navigation.jsx`.
+- Profile details: Update content in `About.jsx`, `Skills.jsx`, `Experience.jsx`, `Achievements.jsx`, `Education.jsx`, and `Contact.jsx`.
+- Project data: Add/edit items in `Projects.jsx` and update links/icons.
+- Social links: Tweak links in `Hero.jsx` and `Footer.jsx` (icons via `lucide-react`).
 
-\`\`\`
-src/
-├── components/
-│   ├── Navigation.jsx
-│   ├── Hero.jsx
-│   ├── About.jsx
-│   ├── Skills.jsx
-│   ├── Experience.jsx
-│   ├── Projects.jsx
-│   ├── Achievements.jsx
-│   ├── Education.jsx
-│   ├── Contact.jsx
-│   └── Footer.jsx
-├── App.jsx
-├── main.jsx
-└── index.css
-public/
-├── analytics-dashboard.png
-├── ecommerce-store.png
-├── collaboration-tool.png
-├── machine-learning-concept.png
-├── mobile-app-backend.jpg
-└── content-management-system.png
-index.html
-vite.config.js
-tailwind.config.js
-postcss.config.js
-package.json
-\`\`\`
+## 📤 Deployment (Vercel)
 
-## Customization
+This project includes `vite.config.js`, so Vercel will auto-detect the framework.
 
-### Update Personal Information
+- New Project → Import Git repo
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- Optional: set `NODE_VERSION` in Vercel if you need a specific runtime
 
-Edit the component files in `src/components/` to update:
-- Skills and expertise
-- Work experience
-- Projects and achievements
-- Education and certifications
-- Contact information
+## 🙌 Credits
 
-### Modify Styling
-
-The design uses CSS custom properties defined in `src/index.css`. You can customize colors and styles globally by modifying the CSS variables:
-
-\`\`\`css
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  /* ... more variables */
-}
-\`\`\`
-
-## Deployment
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically detect the Vite configuration and deploy
-
-\`\`\`bash
-npm run build
-\`\`\`
-
-### Deploy to Other Platforms
-
-The `dist/` folder generated by `npm run build` can be deployed to any static hosting service (Netlify, GitHub Pages, Cloudflare Pages, etc.)
-
-## Performance
-
-- **Lazy Loading**: Components load efficiently with React
-- **Optimized Images**: Placeholder images with proper optimization
-- **CSS Optimization**: Tailwind CSS purges unused styles in production
-- **Code Splitting**: Vite automatically splits code for optimal loading
-
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Contact
-
-For inquiries about this portfolio or to discuss opportunities:
-- Email: aniket@example.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
-
----
-
-Built with ❤️ by Aniket Bansod
+- React, Vite, TailwindCSS
+- Icons by `lucide-react`
+- Inspiration from modern developer portfolios and Tailwind design patterns
