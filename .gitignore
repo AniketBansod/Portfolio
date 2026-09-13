@@ -1,0 +1,10 @@
+# Private documents: never publish
+*Offer_Letter*
+*Offer Letter*
+AniketBansod-Resume.pdf
+AniketBansod_Formal.jpeg
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
